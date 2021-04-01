@@ -1,0 +1,35 @@
+{
+	"currentQuestion": {},
+	"questions": [
+		{
+			"title": "Wie würden Dich Deine Freund*innen beschreiben?",
+			"image": "StockSnap_Pixybay.jpg",
+			"options": [
+				"Frage 1 Antwort 1",
+				"Frage 1 Antwort 2",
+				"Frage 1 Antwort 3",
+				"Frage 1 Antwort 4"
+			]
+		},
+		{
+			"title": "Damals als Hauspartys noch möglich waren...Wo warst Du denn auf jeder Party zu finden?",
+			"image": "cocktails-1149171_640.jpg",
+			"options": [
+				"Frage 2 Antwort 1",
+				"Frage 2 Antwort 2",
+				"Frage 2 Antwort 3",
+				"Frage 2 Antwort 4"
+			]
+		},
+		{
+			"title": "Und welches neue Hobby bringt Dich durch die Coronazeit?",
+			"image": "knit-869221_640.jpg",
+			"options": [
+				"Frage 3 Antwort 1",
+				"Frage 3 Antwort 2",
+				"Frage 3 Antwort 3",
+				"Frage 3 Antwort 4"
+			]
+		}
+	]
+}

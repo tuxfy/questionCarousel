@@ -1,0 +1,15 @@
+.indicatorContainer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5vh;
+	.indicator {
+		height: 1vmax;
+		width: 1vmax;
+		background-color: rgba(227, 0, 15, 0.1);
+		margin: 0.3vmax;
+		cursor: pointer;
+		&.active {
+			background-color: rgba(227, 0, 15, 1);
+		}
+	}
+}
