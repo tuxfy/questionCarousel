@@ -5,11 +5,18 @@
 	.indicator {
 		height: 1vmax;
 		width: 1vmax;
-		background-color: rgba(227, 0, 15, 0.1);
+		background: rgba(227, 0, 15, 0.1);
 		margin: 0.3vmax;
 		cursor: pointer;
 		&.active {
-			background-color: rgba(227, 0, 15, 1);
+			background: rgba(227, 0, 15, 1);
+		}
+	}
+	@media all and (max-device-width: 800px) {
+		.indicator {
+			height: 3vmax;
+			width: 3vmax;
+			margin: 0.8vmax;
 		}
 	}
 }

@@ -5,3 +5,9 @@
 	flex-direction: column;
 	justify-content: center;
 }
+
+@media all and (max-device-width: 800px) {
+		.control {
+			display: none;
+		}
+	}
