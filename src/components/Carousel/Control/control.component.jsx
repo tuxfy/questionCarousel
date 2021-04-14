@@ -1,9 +1,13 @@
+import React, { useContext } from 'react'
 import './control.styles.scss'
+import CarouselContext from '../carousel.context'
 
-export default function Control({ direction, navFunc }) {
+export default function Control({ direction }) {
+	const { navigateQuestions } = useContext(CarouselContext)
+
 	const handleOnClick = el => {
 		const direction = el.target.dataset.direction
-		navFunc(direction)
+		navigateQuestions(direction)
 	}
 
 	return (
