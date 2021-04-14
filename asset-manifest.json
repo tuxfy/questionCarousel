@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/questionCarousel/static/css/main.536fd920.chunk.css",
+    "main.js": "/questionCarousel/static/js/main.88506edf.chunk.js",
+    "main.js.map": "/questionCarousel/static/js/main.88506edf.chunk.js.map",
+    "runtime-main.js": "/questionCarousel/static/js/runtime-main.b367ba8c.js",
+    "runtime-main.js.map": "/questionCarousel/static/js/runtime-main.b367ba8c.js.map",
+    "static/js/2.a35d6349.chunk.js": "/questionCarousel/static/js/2.a35d6349.chunk.js",
+    "static/js/2.a35d6349.chunk.js.map": "/questionCarousel/static/js/2.a35d6349.chunk.js.map",
+    "static/js/3.0d2cbd54.chunk.js": "/questionCarousel/static/js/3.0d2cbd54.chunk.js",
+    "static/js/3.0d2cbd54.chunk.js.map": "/questionCarousel/static/js/3.0d2cbd54.chunk.js.map",
+    "index.html": "/questionCarousel/index.html",
+    "static/css/main.536fd920.chunk.css.map": "/questionCarousel/static/css/main.536fd920.chunk.css.map",
+    "static/js/2.a35d6349.chunk.js.LICENSE.txt": "/questionCarousel/static/js/2.a35d6349.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b367ba8c.js",
+    "static/js/2.a35d6349.chunk.js",
+    "static/css/main.536fd920.chunk.css",
+    "static/js/main.88506edf.chunk.js"
+  ]
+}
