@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { TouchEvent, useContext, useEffect } from 'react'
 
 import './carousel.styles.scss'
 
@@ -16,27 +16,26 @@ export default function Carousel() {
 		fetchQuestions()
 	}, [!questions.length])
 
-	let touchStart = undefined
-	let touchEnd = undefined
-	const handleTouchMove = e => {
-		if (touchStart == null) touchStart = e.targetTouches[0].clientX
+	let touchStart: number | null
+	let touchEnd: number | null
+	const handleTouchMove = (e: TouchEvent) => {
+		if (!touchStart) touchStart = e.targetTouches[0].clientX
 	}
 
-	const handleTouchEnd = e => {
+	const handleTouchEnd = (e: TouchEvent) => {
 		if (!touchStart) return
 
-		touchEnd = e.changedTouches[0].clientX
+		touchEnd = e.changedTouches[0].clientX || 0
 		const diff = touchStart - touchEnd
 
 		if (diff < -150) {
 			navigateQuestions(`left`)
-		}
-		else if (diff > 150) {
+		} else if (diff > 150) {
 			navigateQuestions(`right`)
 		}
 
-		touchStart = undefined
-		touchEnd = undefined
+		touchStart = null
+		touchEnd = null
 	}
 
 	return (

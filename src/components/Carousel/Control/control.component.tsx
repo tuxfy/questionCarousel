@@ -1,12 +1,17 @@
-import React, { useContext } from 'react'
+import React, { MouseEvent, useContext } from 'react'
 import './control.styles.scss'
+
+import { Direction } from '../carousel.types'
 import CarouselContext from '../carousel.context'
 
-export default function Control({ direction }) {
+interface ControlProps {
+	direction: Direction
+}
+
+export default function Control({ direction }: ControlProps) {
 	const { navigateQuestions } = useContext(CarouselContext)
 
-	const handleOnClick = el => {
-		const direction = el.target.dataset.direction
+	const handleOnClick = () => {
 		navigateQuestions(direction)
 	}
 

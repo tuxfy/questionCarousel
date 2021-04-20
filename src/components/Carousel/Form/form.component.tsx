@@ -1,13 +1,16 @@
-import React, { useContext } from 'react'
+import React, { MouseEvent, ChangeEvent, useContext } from 'react'
 import './form.styles.scss'
 
+import { IAnswer } from '../carousel.types'
 import CarouselContext from '../carousel.context'
 
 export default function Content() {
 	const { currentQuestion, selectAnswer } = useContext(CarouselContext)
 
-	const handleClickAnswer = el => {
-		const selectedIndex = el.target.dataset.index
+	const handleChangeAnswer = (e: ChangeEvent<HTMLElement> | MouseEvent<HTMLElement>) => {
+		const selectedIndex: number = e.currentTarget?.dataset?.index
+			? ~~e.currentTarget.dataset.index
+			: 0
 		selectAnswer(selectedIndex)
 	}
 
@@ -17,18 +20,18 @@ export default function Content() {
 				<div className="formContainer">
 					<h1>{currentQuestion.title}</h1>
 					<form>
-						{currentQuestion.options.map((answer, i) => (
+						{currentQuestion.options.map((answer: IAnswer, i: number) => (
 							<div key={i}>
 								<input
 									type="radio"
 									name="question"
-									id={i}
+									id={`${i}`}
 									data-index={i}
-									onChange={handleClickAnswer}
+									onChange={handleChangeAnswer}
 									checked={answer.selected}
 									required
 								/>
-								<label htmlFor={answer.title} data-index={i} onClick={handleClickAnswer}>
+								<label htmlFor={answer.title} data-index={i} onClick={handleChangeAnswer}>
 									{answer.title}
 								</label>
 							</div>
